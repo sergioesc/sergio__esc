@@ -27,7 +27,7 @@ body{
 }
 
 .logo__nav{
-    margin: 20px;
+    margin: 20px 0 0 20px;
     width: 40%;
     font-size: 24px;
 }
@@ -79,7 +79,6 @@ body{
         display:block;
         position: fixed;
         width: 100vw;
-        height: 500px;
         top: 75px;
         left: -4000px;
         margin: auto;
@@ -94,10 +93,9 @@ body{
     }
 
     .lista__nav ul li{
-        border-bottom: 2px solid cyan;
-        padding: 20px;
+        border-bottom: 2px solid black;
+        padding: 40px 0;
         font-size: 24px;
-        margin: 30px 0;
     }
 
     .logo__nav{
@@ -114,20 +112,16 @@ body{
     .page_actual{
         border-bottom: none;
     }
-
-    .myself__section{
-        margin-top: 0
+    
+    .myself__section .myself__container{
+        display:block;
     }
-    .myself .myself__container{
-        display:inline-block;
+    .myself__section .myself__img{
+        margin-right: 0;
+        display: inline-block
     }
-    .myself .myself__text{
+    .myself__section .myself__text{
         width: 100%;
-        margin-top: 30px
-
-    }
-    .myself .myself__img{
-        margin: auto;
     }
 }
 
@@ -162,67 +156,56 @@ body{
 }
 
 
-
-
-
-
-
-/*Section mySelf*/
 .myself__section{
-    width: 90%;
-    margin: auto;
+    width: 100%;
     text-align: center;
 }
 .myself__section h1{
-    border-bottom: cyan 2px solid;
-    padding: 10px 50px;
-    margin-top: 50px;
-    font-size: 24px;
-    font-weight: 200;
     display: inline-block;
+    margin-top: 50px;
+    border-bottom: cyan 3px solid;
+    padding: 0 20px 10px 20px;
 }
-
 .myself{
-    margin: 30px auto;
+    width: 100%;
+    margin:0 auto;
+    margin-top: 60px;
+    text-align: center;
 }
-
 
 .myself__container{
-    display: flex;
-    margin: 0 auto;
-    width: 100%;
+    display:flex;
+    text-align: center;
+    width: 90%;
+    margin: auto
 }
+
 .myself__img{
-    width: 200px;
-    height: 200px;
-    background:#ffffff url("../img/fotoperfil.png");
-    background-position: center;
+    width: 210px;
+    height: 210px;
+    background: url('../img/fotoperfil.png') center no-repeat;
     background-size: cover;
     border-radius: 50%;
-
+    margin-right: 20px;
 }
-
 .myself__text{
     width: 70%;
 }
 
-.myself__text p{
-    margin: 25px 0;
+.myself__text h2, p{
+    margin: 10px    
 }
 .myself__text a{
+    display: inline-block;
     text-decoration: none;
-    list-style: none;
     color: black;
-    background-color: #f2f2f2;
+    background-color: white;
+    margin-top: 10px;
     padding: 10px 20px;
-    font-size: 18px;
-    margin: 35px 0;
 }
 
 .myself__text a:hover{
     background-color: cyan;
-    color: black;
-    transition: .4s;
+    transition: .5s
 }
-
 
