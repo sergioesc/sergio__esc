@@ -115,11 +115,15 @@ body{
         border-bottom: none;
     }
 
+    .myself__section{
+        margin-top: 0
+    }
     .myself .myself__container{
         display:inline-block;
     }
     .myself .myself__text{
         width: 100%;
+        margin-top: 30px
 
     }
     .myself .myself__img{
@@ -154,6 +158,7 @@ body{
         font-size: 24px;
         padding: 0 10px
     }
+    
 }
 
 
@@ -178,8 +183,7 @@ body{
 }
 
 .myself{
-    height: 250px;
-    margin-top: 60px;
+    margin: 30px auto;
 }
 
 
@@ -195,6 +199,7 @@ body{
     background-position: center;
     background-size: cover;
     border-radius: 50%;
+
 }
 
 .myself__text{
