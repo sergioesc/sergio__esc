@@ -123,6 +123,10 @@ body{
     .myself__section .myself__text{
         width: 100%;
     }
+    .skills .seccion__skills{
+        display: block;
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 700px){
@@ -192,7 +196,7 @@ body{
     width: 70%;
 }
 
-.myself__text h2, p{
+.myself__text h2, .myself__text p{
     margin: 10px    
 }
 .myself__text a{
@@ -209,3 +213,91 @@ body{
     transition: .5s
 }
 
+
+
+
+.skills{
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.skills h2{
+    display: inline-block;
+    margin-top: 50px;
+    border-bottom: cyan 3px solid;
+    padding: 0 20px 10px 20px;
+}
+
+.skills__container{
+
+    display: grid;
+    grid-template-columns: 170px 170px;
+    grid-template-rows: 150px 150px;
+    gap: 50px;
+    max-width: 400px;
+    justify-self: center;
+    padding: 10px;
+}
+.seccion__skills{
+    display: flex;
+    margin: 50px 100px;
+    text-align: center;
+    width: 100%;
+}
+
+.skill__1, .skill__2, .skill__3, .skill__4{
+    height: 150px;
+    width: 150px;
+    margin: auto;
+}
+
+.skill__1{
+    background: black url("../img/html-5.png") center no-repeat;
+    background-size: cover;
+}
+.skill__2{
+    background: black url("../img/css-3.png") center no-repeat;
+    background-size: cover;
+}
+.skill__3{
+    background: black url("../img/js.png") center no-repeat;
+    background-size: cover;
+}
+.skill__4{
+    background: black url("../img/git.png") center no-repeat;
+    background-size: cover;
+}
+
+.skill__hover{
+    width: 150px;
+    height: 150px;
+    font-size: 0;
+}
+
+.skill__hover:hover{
+    display: block;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(0, 0, 0, .8);
+    transition: .2s;
+    font-size: 21px;
+    cursor: pointer;
+}
+
+.skill__hover a{
+    display: inline-block;
+    margin-top: 15px;
+    color: cyan
+}
+
+.skills__habilidades{
+    height: 100%;
+    font-size: 24px;
+    margin: auto;
+    text-align: start;
+    
+}
+.skills__habilidades ul li{
+    list-style:square
+}
