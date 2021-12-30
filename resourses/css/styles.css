@@ -191,9 +191,9 @@ body{
 .myself__img{
     width: 200px;
     height: 200px;
-    background-image: url("/resourses/img/foto__perfil.png");
-    background-size: cover;
+    background:#ffffff url("../img/fotoperfil.png");
     background-position: center;
+    background-size: cover;
     border-radius: 50%;
 }
 
