@@ -137,6 +137,9 @@ body{
         width: 130px;
         height: 130px;
     }
+    .skills .skill__hover:hover{
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 700px){
@@ -157,6 +160,12 @@ body{
         width: 100px;
         height: 100px;
     }
+    .skills .skills__section{
+        margin-top: 30px
+    }
+    .skills .skills__container{
+        width: 90%;
+    }
 }
 
 @media screen and (max-width: 530px){
@@ -171,8 +180,33 @@ body{
         padding: 0 10px
     }
     .skills .skills__section #skill__all{
-        width: 80px;
-        height: 80px;
+        width: 90px;
+        height: 90px;
+    }
+    .skills .skills__section{
+        margin-top: 30px
+    }
+    .skills .skills__container{
+        width: 90%;
+    } 
+    .skills .skill__hover:hover{
+        font-size: 12px;
+    }   
+}
+
+@media screen and (max-width: 455px){
+    .skills .skills__section #skill__all{
+        width: 70px;
+        height: 70px;
+    }
+}
+@media screen and (max-width: 320px){
+    .skills .skills__container{
+        width: 95%;
+    }
+    .skills .skills__section #skill__all{
+        width: 60px;
+        height: 60px;
     }
 }
 
@@ -246,7 +280,7 @@ body{
 
 .skills__section{
     display: block;
-    margin-top: 70px;
+    margin-top: 50px;
     width: 100%;
 
 }
