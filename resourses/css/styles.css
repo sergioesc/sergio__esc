@@ -74,6 +74,16 @@ body{
     font-size: 30px;
 }
 
+@media screen and (max-width: 1300px){
+    .skills .skills__container{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 1200px){
+    .skills .skills__container{
+        width: 80%;
+    }
+}
 @media screen and (max-width: 1100px){
     .skills .skills__section #skill__all{
         width: 170px;
@@ -212,8 +222,9 @@ body{
 
 
 .myself__section{
-    width: 100%;
+    width: 80%;
     text-align: center;
+    margin: auto;
 }
 .myself__section h1{
     display: inline-block;
@@ -288,13 +299,13 @@ body{
 .skills__container{
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 70%;
     margin: auto
 }
 
 #skill__all{
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
 }
 
 .skill__1{
@@ -323,7 +334,8 @@ body{
 .skill__hover:hover{
     background-color: rgba(0, 0, 0, .7);
     font-size: 20px;
-    cursor: pointer
+    cursor: pointer;
+    transition: .1s;
 }
 .skill__hover__text{
     position: relative;
