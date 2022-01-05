@@ -243,7 +243,6 @@ body{
     display: flex;
     margin: 50px 100px;
     text-align: center;
-    width: 100%;
 }
 
 .skill__1, .skill__2, .skill__3, .skill__4{
@@ -294,8 +293,8 @@ body{
 .skills__habilidades{
     height: 100%;
     font-size: 24px;
-    margin: auto;
     text-align: start;
+    margin: auto
     
 }
 .skills__habilidades ul li{
