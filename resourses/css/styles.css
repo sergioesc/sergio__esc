@@ -74,6 +74,12 @@ body{
     font-size: 30px;
 }
 
+@media screen and (max-width: 1100px){
+    .skills .skills__section #skill__all{
+        width: 170px;
+        height: 170px;
+    }
+}
 @media screen and (max-width: 900px){
     .lista__nav{
         display:block;
@@ -127,6 +133,10 @@ body{
         display: block;
         width: 100%;
     }
+    .skills .skills__section #skill__all{
+        width: 130px;
+        height: 130px;
+    }
 }
 
 @media screen and (max-width: 700px){
@@ -143,6 +153,10 @@ body{
     .logo__nav{
         font-size: 21px;
     }
+    .skills .skills__section #skill__all{
+        width: 100px;
+        height: 100px;
+    }
 }
 
 @media screen and (max-width: 530px){
@@ -156,7 +170,10 @@ body{
         font-size: 24px;
         padding: 0 10px
     }
-    
+    .skills .skills__section #skill__all{
+        width: 80px;
+        height: 80px;
+    }
 }
 
 
@@ -228,23 +245,21 @@ body{
 }
 
 .skills__section{
-    margin-top: 60px;
-    display: flex;
-    width: 90%;
-    margin: 0 auto;
-    margin-top: 70px
+    display: block;
+    margin-top: 70px;
+    width: 100%;
+
 }
 
 .skills__container{
-    width: 35%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 50px 
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto
 }
 
-.skill__1, .skill__2, .skill__3, .skill__4{
-    width: 100%;
+#skill__all{
+    width: 200px;
     height: 200px;
 }
 
@@ -263,4 +278,20 @@ body{
 .skill__4{
     background: url("../img/git.png") center no-repeat ;
     background-size: cover;
+}
+
+.skill__hover{
+    font-size: 0;
+    text-align: center;
+    display: block;
+    height: 100%;    
+}
+.skill__hover:hover{
+    background-color: rgba(0, 0, 0, .7);
+    font-size: 20px;
+    cursor: pointer
+}
+.skill__hover__text{
+    position: relative;
+    top:35%
 }
